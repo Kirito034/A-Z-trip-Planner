@@ -1,2 +1,7 @@
 frontend/src/images/Intro.mp4 filter=lfs diff=lfs merge=lfs -text
 frontend/node_modules/.cache/default-development/*.pack filter=lfs diff=lfs merge=lfs -text
+node_modules/
+frontend/node_modules/
+frontend/src/images/Intro.mp4
+frontend/.cache/
+*.mp4 filter=lfs diff=lfs merge=lfs -text
