@@ -5,3 +5,10 @@ frontend/node_modules/
 frontend/src/images/Intro.mp4
 frontend/.cache/
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+# Node modules
+node_modules/
+frontend/node_modules/
+# Cache files
+frontend/.cache/
+# Large media files
+frontend/src/images/Intro.mp4
