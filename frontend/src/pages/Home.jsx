@@ -3,12 +3,12 @@ import '../Styling/home.css';
 import { Container, Row, Col } from 'reactstrap';
 import heroImg from '../images/Hero1.jpeg';
 import heroImg2 from '../images/Hero2.jpg';
-import heroVideo from '../images/Intro.mp4';
 import Indiaimg from '../images/Indiamap.jpg';
 import Subtitle from './../shared/Subtitles';
 import SearchBar from './../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import { Link } from 'react-router-dom'; // Import Link for routing
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -33,11 +33,6 @@ const Home = () => {
               </div>
             </Col>
             <Col lg='2'>
-              <div className='hero__img-box mt-4'>
-                <video src={heroVideo} alt='' controls />
-              </div>
-            </Col>
-            <Col lg='2'>
               <div className='hero__img-box mt-5'>
                 <img src={heroImg2} alt='' />
               </div>
@@ -46,7 +41,12 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* ============ Hero Section End ============= */}
+      {/* * <Col lg='2'>
+              <div className='hero__img-box mt-4'>
+                <video src={heroVideo} alt='' controls />
+              </div>
+            </Col> *\
+            ============ Hero Section End ============= */}
 
       {/* ============ Services Section Start ============= */}
       <section>
@@ -83,14 +83,14 @@ const Home = () => {
               <div className="card">
                 <h3>Budget</h3>
                 <p>Manage your travel budget efficiently.</p>
-                <Link to="/budget" className="btn btn-primary">Explore Budget</Link>
+                <NavLink to="/searchform" className="btn btn-primary">Explore Budget</NavLink>
               </div>
             </Col>
             <Col lg='4' md='6' className="mb-4">
               <div className="card">
                 <h3>Travel</h3>
                 <p>Plan your travel itinerary and explore new destinations.</p>
-                <Link to="/travel" className="btn btn-primary">Explore Travel</Link>
+                <NavLink to="/travelcard" className="btn btn-primary">Explore your travel options</NavLink>
               </div>
             </Col>
             <Col lg='4' md='6' className="mb-4">

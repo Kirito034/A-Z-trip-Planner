@@ -36,5 +36,5 @@ export const create = async (req, res) => {
 
 export const allHotel = async (req, res) => {
     const allHotel = await Hotel.find()
-    res.status(200).json(allHotel)
+    res.status(200).json({allHotel})
 }
